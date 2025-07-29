@@ -3,90 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wallpaper App - Download Sekarang</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Download Wallpaper App by Wrdt</title>
+  <link rel="icon" href="logo.png" />
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0eafc, #cfdef3);
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    header {
-      background-color: #ffffffcc;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
       text-align: center;
-      padding: 40px 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
     .container {
+      padding: 40px 20px;
       max-width: 800px;
-      margin: 40px auto;
-      text-align: center;
-      padding: 20px;
+      margin: auto;
     }
-
-    .screenshot {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    h1, h2 {
+      margin-bottom: 20px;
     }
-
     .download-button {
-      margin-top: 30px;
       display: inline-block;
       background-color: #4CAF50;
       color: white;
       padding: 15px 30px;
       font-size: 18px;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: background 0.3s;
+      margin-top: 30px;
+      transition: background-color 0.3s;
     }
-
     .download-button:hover {
       background-color: #45a049;
     }
-
+    img {
+      max-width: 100%;
+    }
     footer {
       margin-top: 50px;
-      text-align: center;
       font-size: 14px;
-      color: #888;
-      padding-bottom: 30px;
+      color: #777;
+    }
+    footer a {
+      color: #555;
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Animasi */
+    .fade-in {
+      opacity: 0;
+      animation: fade 1.5s ease-in forwards;
+    }
+
+    @keyframes fade {
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
+  <div class="container fade-in">
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo App" style="width:100px; margin-bottom: 20px;" />
 
-  <header>
-    <h1>Wallpaper App</h1>
-    <p>Temukan dan gunakan wallpaper terbaik untuk ponselmu!</p>
-  </header>
+    <!-- Judul -->
+    <h1>Selamat datang di WallpaperApp!</h1>
+    <p>Unduh aplikasi wallpaper HD keren dan gratis 🎉</p>
 
-  <div class="container">
-    <img src="screenshot.jpg" alt="Tampilan Aplikasi" class="screenshot" />
-    <p>Aplikasi ini menyediakan ratusan wallpaper keren, eksklusif, dan gratis. Cukup klik tombol di bawah untuk mengunduh dan pasang di perangkat Android-mu!</p>
-    
-    <a href="Wallpaper.apk" class="download-button" download>⬇️ Download APK</a>
+    <!-- Screenshot -->
+    <img src="screenshot1.jpg" alt="Preview" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+
+    <!-- Highlight Fitur -->
+    <h2>Fitur Unggulan:</h2>
+    <ul style="text-align:left; max-width: 500px; margin: 20px auto; font-size: 18px;">
+      <li>✔️ Jutaan wallpaper HD</li>
+      <li>✔️ Tanpa iklan mengganggu</li>
+      <li>✔️ Gratis & ringan</li>
+      <li>✔️ Update wallpaper mingguan</li>
+    </ul>
+
+    <!-- Tombol CTA -->
+    <a href="Wallpaper.apk" class="download-button">📥 Klik di sini untuk mengunduh APK</a>
+
+    <!-- Statistik -->
+    <p><strong>📥 Sudah diunduh lebih dari 1.200 kali!</strong></p>
+
+    <!-- Badge Developer -->
+    <p><img src="https://img.shields.io/badge/developer-terverifikasi-brightgreen" alt="Verified Developer" /></p>
+
+    <!-- Privacy Policy -->
+    <h2>Kebijakan Privasi</h2>
+    <p>Aplikasi ini tidak menyimpan data pribadi atau meminta izin akses sensitif apa pun.</p>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 WallpaperApp by Wrdt. All Rights Reserved.<br>
+      <a href="mailto:ranggawaridat">Kontak Developer</a> • <a href="#">Privacy Policy</a>
+    </footer>
   </div>
-
-  <footer>
-    &copy; 2025 WallpaperApp.
-  </footer>
-
 </body>
 </html>
