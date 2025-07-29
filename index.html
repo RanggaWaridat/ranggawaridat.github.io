@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Download Wallpaper App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wallpaper App - Download Sekarang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      text-align: center;
-      background-color: #f5f5f5;
-      padding: 50px;
-    }
-    h1 {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
       color: #333;
+      margin: 0;
+      padding: 0;
     }
-    .download-btn {
+
+    header {
+      background-color: #ffffffcc;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .screenshot {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .download-button {
+      margin-top: 30px;
+      display: inline-block;
       background-color: #4CAF50;
       color: white;
       padding: 15px 30px;
       font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
       text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
     }
-    .download-btn:hover {
+
+    .download-button:hover {
       background-color: #45a049;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      padding-bottom: 30px;
     }
   </style>
 </head>
 <body>
-  <h1>Download Wallpaper App</h1>
-  <p>Klik tombol di bawah untuk mengunduh aplikasi.</p>
-  <a href="Wallpaper.apk" class="download-btn" download>Download APK</a>
+
+  <header>
+    <h1>Wallpaper App</h1>
+    <p>Temukan dan gunakan wallpaper terbaik untuk ponselmu!</p>
+  </header>
+
+  <div class="container">
+    <img src="screenshot.jpg" alt="Tampilan Aplikasi" class="screenshot" />
+    <p>Aplikasi ini menyediakan ratusan wallpaper keren, eksklusif, dan gratis. Cukup klik tombol di bawah untuk mengunduh dan pasang di perangkat Android-mu!</p>
+    
+    <a href="Wallpaper.apk" class="download-button" download>⬇️ Download APK</a>
+  </div>
+
+  <footer>
+    &copy; 2025 WallpaperApp.
+  </footer>
+
 </body>
 </html>
