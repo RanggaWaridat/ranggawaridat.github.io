@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Aplikasi Rangga Waridat</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* bg-slate-50 - Lighter background */
+            color: #1e293b; /* text-slate-800 - Darker text for light background */
+        }
+        /* Custom scrollbar for better aesthetics on light background */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* bg-slate-200 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* bg-slate-400 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* bg-slate-500 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-indigo-600 hover:text-indigo-500 transition duration-300 ease-in-out">
+                Rangga Waridat
+            </a>
+            <div class="space-x-4 md:space-x-8">
+                <a href="#aplikasi-dirilis" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out font-medium">Aplikasi Dirilis</a>
+                <a href="#aplikasi-mendatang" class="text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out font-medium">Aplikasi Mendatang</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-white to-gray-100 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+            <div class="absolute top-1/2 right-1/4 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+            <div class="absolute bottom-1/4 left-1/2 w-64 h-64 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+        </div>
+        <div class="relative z-10 p-6 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-4 drop-shadow-lg">
+                Portofolio Aplikasi <span class="text-indigo-600">Rangga Waridat</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Jelajahi karya-karya saya, dari aplikasi yang sudah dirilis hingga ide-ide inovatif yang sedang dalam pengembangan.
+            </p>
+            <a href="#aplikasi-dirilis" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75">
+                Lihat Aplikasi
+            </a>
+        </div>
+        <style>
+            @keyframes blob {
+                0% { transform: translate(0px, 0px) scale(1); }
+                33% { transform: translate(30px, -50px) scale(1.1); }
+                66% { transform: translate(-20px, 20px) scale(0.9); }
+                100% { transform: translate(0px, 0px) scale(1); }
+            }
+            .animate-blob { animation: blob 7s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+            .animation-delay-2000 { animation-delay: 2s; }
+            .animation-delay-4000 { animation-delay: 4s; }
+        </style>
+    </section>
+
+    <!-- Aplikasi yang Sudah Dirilis Section -->
+    <section id="aplikasi-dirilis" class="py-16 bg-gray-50 px-6 md:px-10">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Aplikasi yang Sudah Dirilis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card for Wallpaper HD -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl border border-gray-200">
+                    <img src="https://placehold.co/600x400/f8fafc/1e293b?text=Wallpaper+HD" alt="Wallpaper HD App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Wallpaper HD</h3>
+                        <p class="text-gray-700 mb-4">
+                            Aplikasi ini menyediakan koleksi wallpaper berkualitas tinggi untuk mempercantik tampilan perangkat Anda. Dengan berbagai kategori dan pembaruan rutin, Anda akan selalu menemukan sesuatu yang baru.
+                        </p>
+                        <a href="wallpaper-app/index.html" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-5 rounded-lg transition duration-300 ease-in-out">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card for WrdtPlays -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl border border-gray-200">
+                    <img src="https://placehold.co/600x400/f8fafc/1e293b?text=WrdtPlays" alt="WrdtPlays App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-600 mb-3">WrdtPlays</h3>
+                        <p class="text-gray-700 mb-4">
+                            WrdtPlays adalah platform hiburan interaktif yang menawarkan berbagai mini-game dan tantangan seru untuk mengisi waktu luang Anda. Cocok untuk segala usia!
+                        </p>
+                        <a href="wrdtplays-app/index.html" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-5 rounded-lg transition duration-300 ease-in-out">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+
+                <!-- You can add more existing application cards here -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Aplikasi Mendatang Section -->
+    <section id="aplikasi-mendatang" class="py-16 bg-white px-6 md:px-10">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Aplikasi Mendatang (Ide)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="upcoming-app-ideas-container">
+                <!-- Existing Upcoming App Idea 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg p-6 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-emerald-600 mb-3">Aplikasi Pelacak Kebiasaan Inovatif</h3>
+                    <p class="text-gray-600 mb-4">
+                        Sebuah aplikasi yang membantu pengguna membangun kebiasaan positif dengan sistem gamifikasi yang menarik, pengingat cerdas, dan visualisasi progres yang memotivasi.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 text-sm">
+                        <li>Fitur: Pelacakan harian, tantangan mingguan, lencana pencapaian.</li>
+                        <li>Target: Meningkatkan produktivitas dan kesejahteraan.</li>
+                    </ul>
+                </div>
+
+                <!-- Existing Upcoming App Idea 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg p-6 border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-emerald-600 mb-3">Platform Belajar Interaktif untuk Anak</h3>
+                    <p class="text-gray-600 mb-4">
+                        Aplikasi edukasi yang dirancang khusus untuk anak-anak, dengan pelajaran interaktif, kuis menyenangkan, dan karakter animasi yang membuat belajar jadi petualangan.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 text-sm">
+                        <li>Fitur: Modul pelajaran, mini-game edukasi, laporan progres orang tua.</li>
+                        <li>Target: Membangun minat belajar sejak dini.</li>
+                    </ul>
+                </div>
+
+                <!-- Generated app ideas will be appended here -->
+
+            </div>
+            <div class="text-center mt-10">
+                <button id="generate-app-idea-btn" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-75">
+                    ✨ Hasilkan Ide Aplikasi Baru ✨
+                </button>
+                <div id="loading-indicator" class="mt-4 text-emerald-600 hidden">
+                    Sedang menghasilkan ide...
+                </div>
+                <div id="error-message" class="mt-4 text-red-600 hidden">
+                    Terjadi kesalahan saat menghasilkan ide. Silakan coba lagi.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 px-6 md:px-10 text-center text-gray-600 rounded-t-lg">
+        <p>&copy; <span id="current-year"></span> Rangga Waridat. Semua hak dilindungi.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <!-- Placeholder for social media links -->
+            <a href="#" class="hover:text-gray-900 transition duration-300 ease-in-out">GitHub</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300 ease-in-out">LinkedIn</a>
+            <a href="#" class="hover:text-gray-900 transition duration-300 ease-in-out">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year dynamically for the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Gemini API Integration for generating app ideas
+        document.getElementById('generate-app-idea-btn').addEventListener('click', async () => {
+            const loadingIndicator = document.getElementById('loading-indicator');
+            const errorMessage = document.getElementById('error-message');
+            const upcomingAppIdeasContainer = document.getElementById('upcoming-app-ideas-container');
+
+            loadingIndicator.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+
+            let chatHistory = [];
+            const prompt = "Generate a creative and innovative mobile application idea. Provide the application name, a brief description, at least three key features, and the primary target audience. Format the response as a JSON object with keys: `appName`, `description`, `features` (an array of strings), and `targetAudience`.";
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+            const payload = {
+                contents: chatHistory,
+                generationConfig: {
+                    responseMimeType: "application/json",
+                    responseSchema: {
+                        type: "OBJECT",
+                        properties: {
+                            "appName": { "type": "STRING" },
+                            "description": { "type": "STRING" },
+                            "features": {
+                                "type": "ARRAY",
+                                "items": { "type": "STRING" }
+                            },
+                            "targetAudience": { "type": "STRING" }
+                        },
+                        "propertyOrdering": ["appName", "description", "features", "targetAudience"]
+                    }
+                }
+            };
+
+            const apiKey = ""; // If you want to use models other than gemini-2.5-flash-preview-05-20 or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            let retryCount = 0;
+            const maxRetries = 5;
+            const baseDelay = 1000; // 1 second
+
+            async function callGeminiApi() {
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        // Implement exponential backoff for rate limiting or transient errors
+                        if (response.status === 429 && retryCount < maxRetries) {
+                            const delay = baseDelay * Math.pow(2, retryCount);
+                            retryCount++;
+                            console.warn(`Rate limit hit. Retrying in ${delay / 1000} seconds... (Attempt ${retryCount})`);
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            return callGeminiApi(); // Retry the call
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const jsonText = result.candidates[0].content.parts[0].text;
+                        const parsedIdea = JSON.parse(jsonText);
+
+                        const newIdeaCard = document.createElement('div');
+                        newIdeaCard.className = 'bg-gray-50 rounded-xl shadow-lg p-6 border border-gray-200'; // Adjusted for light mode
+                        newIdeaCard.innerHTML = `
+                            <h3 class="text-2xl font-semibold text-emerald-600 mb-3">${parsedIdea.appName}</h3>
+                            <p class="text-gray-600 mb-4">${parsedIdea.description}</p>
+                            <ul class="list-disc list-inside text-gray-700 text-sm">
+                                ${parsedIdea.features.map(feature => `<li>Fitur: ${feature}</li>`).join('')}
+                                <li>Target: ${parsedIdea.targetAudience}</li>
+                            </ul>
+                        `;
+                        upcomingAppIdeasContainer.appendChild(newIdeaCard);
+                    } else {
+                        console.error("Unexpected API response structure:", result);
+                        errorMessage.classList.remove('hidden');
+                    }
+                } catch (error) {
+                    console.error("Error generating app idea:", error);
+                    errorMessage.classList.remove('hidden');
+                } finally {
+                    loadingIndicator.classList.add('hidden');
+                }
+            }
+            callGeminiApi(); // Initial call
+        });
+    </script>
+</body>
+</html>
