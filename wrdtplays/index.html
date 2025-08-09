@@ -3,44 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WrdtPlays - Portofolio Rangga Waridat</title>
-    <!-- Tailwind CSS CDN -->
+    <title>WrdtPlays</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* bg-slate-50 - Lighter background */
-            color: #1e293b; /* text-slate-800 - Darker text for light background */
+            background-color: #f8fafc;
+            color: #1e293b;
         }
-        /* Custom scrollbar for better aesthetics on light background */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #e2e8f0; /* bg-slate-200 */
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #94a3b8; /* bg-slate-400 */
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #64748b; /* bg-slate-500 */
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #e2e8f0; }
+        ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
     </style>
 </head>
 <body class="antialiased">
-    <!-- Header/Navbar (Removed Rangga Waridat title and navigation links) -->
-    <header class="bg-white shadow-lg py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
-        <nav class="container mx-auto flex justify-center items-center">
-            <!-- You can add a simple logo or back button here if desired, or leave it empty for a very clean look -->
-            <!-- Example: <a href="/" class="text-xl font-semibold text-gray-700 hover:text-gray-900">Beranda Portofolio</a> -->
-        </nav>
-    </header>
 
     <main class="container mx-auto py-16 px-6 md:px-10">
-        <!-- Hero Section Aplikasi -->
+        <!-- Card Aplikasi Dirilis -->
         <section class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl shadow-xl p-8 md:p-16 text-center mb-16 border border-indigo-100">
             <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-800 mb-4 leading-tight tracking-tight">
                 WrdtPlays
@@ -53,71 +34,29 @@
             </a>
         </section>
 
-        <!-- Deskripsi Aplikasi -->
+        <!-- Tentang WrdtPlays -->
         <section class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-16 border border-gray-100">
             <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Tentang WrdtPlays</h2>
             <p class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto text-center">
-                WrdtPlays dirancang untuk memberikan pengalaman bermain game yang ringan namun sangat menghibur. Dengan koleksi mini-game yang terus diperbarui, Anda tidak akan pernah bosan. Aplikasi ini sempurna untuk sesi bermain singkat saat istirahat atau untuk bersantai setelah hari yang panjang. Antarmuka yang intuitif memastikan siapa pun dapat langsung bermain tanpa hambatan.
+                WrdtPlays dirancang untuk memberikan pengalaman bermain game yang ringan namun sangat menghibur. 
+                Dengan koleksi mini-game yang terus diperbarui, Anda tidak akan pernah bosan. 
+                Cocok untuk mengisi waktu istirahat atau bersantai setelah hari panjang.
             </p>
         </section>
-
-        <!-- Fitur Utama -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
-            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Fitur Unggulan</h2>
-                <ul class="list-none space-y-4">
-                    <li class="flex items-start">
-                        <span class="text-indigo-500 text-2xl mr-3">&#10003;</span> <!-- Checkmark icon -->
-                        <div>
-                            <h3 class="font-semibold text-xl text-gray-900">Koleksi Mini-Game Beragam</h3>
-                            <p class="text-gray-700">Nikmati berbagai jenis permainan yang terus bertambah, dari puzzle hingga aksi cepat.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-indigo-500 text-2xl mr-3">&#10003;</span>
-                        <div>
-                            <h3 class="font-semibold text-xl text-gray-900">Tantangan Harian & Mingguan</h3>
-                            <p class="text-gray-700">Selesaikan misi untuk mendapatkan poin, lencana, dan hadiah eksklusif.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-indigo-500 text-2xl mr-3">&#10003;</span>
-                        <div>
-                            <h3 class="font-semibold text-xl text-gray-900">Papan Peringkat Global</h3>
-                            <p class="text-gray-700">Bersaing dengan teman dan pemain lain di seluruh dunia untuk menjadi yang terbaik.</p>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-indigo-500 text-2xl mr-3">&#10003;</span>
-                        <div>
-                            <h3 class="font-semibold text-xl text-gray-900">Mode Offline</h3>
-                            <p class="text-gray-700">Mainkan game favorit Anda kapan saja, di mana saja, bahkan tanpa koneksi internet.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 flex flex-col justify-center items-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Antarmuka Pengguna</h2>
-                <img src="https://placehold.co/500x800/e0e7ff/3730a3?text=WrdtPlays+UI" alt="WrdtPlays UI Screenshot" class="w-full max-w-sm rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105">
-                <p class="text-gray-600 text-sm mt-4 text-center">Desain ceria dan intuitif untuk pengalaman bermain terbaik.</p>
-            </div>
-        </section>
-
-        <!-- Galeri Tangkapan Layar -->
-        <section class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-16 border border-gray-100">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Galeri Tangkapan Layar</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <img src="https://placehold.co/400x600/e0e7ff/3730a3?text=WrdtPlays+Game+1" alt="Screenshot WrdtPlays Game 1" class="w-full h-auto rounded-lg shadow-md transform transition-all duration-300 hover:scale-105">
-                <img src="https://placehold.co/400x600/e0e7ff/3730a3?text=WrdtPlays+Game+2" alt="Screenshot WrdtPlays Game 2" class="w-full h-auto rounded-lg shadow-md transform transition-all duration-300 hover:scale-105">
-                <img src="https://placehold.co/400x600/e0e7ff/3730a3?text=WrdtPlays+Menu" alt="Screenshot WrdtPlays Menu" class="w-full h-auto rounded-lg shadow-md transform transition-all duration-300 hover:scale-105">
-            </div>
-        </section>
-
-        <!-- Removed "Kembali ke Portofolio" button -->
     </main>
 
-    <footer class="bg-white py-8 px-6 md:px-10 text-center text-gray-600 rounded-t-lg shadow-inner">
-        <p>&copy; <span id="current-year-detail"></span> Rangga Waridat. Semua hak dilindungi.</p>
+    <!-- Footer dengan Contact Me -->
+    <footer class="bg-white py-10 px-6 md:px-10 text-center text-gray-600 rounded-t-lg shadow-inner">
+        <p class="mb-4 font-semibold text-lg">Hubungi</p>
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="mailto:rangga@example.com" class="text-indigo-600 hover:text-indigo-800 transition">
+                📧 Email
+            </a>
+            <a href="https://instagram.com/rangga" class="text-pink-500 hover:text-pink-700 transition">
+                📷 Instagram
+            </a>
+        </div>
+        <p class="text-sm">&copy; <span id="current-year-detail"></span> Rangga Waridat. Semua hak dilindungi.</p>
     </footer>
 
     <script>
