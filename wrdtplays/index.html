@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WrdtPlays</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
-        }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #e2e8f0; }
-        ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WrdtPlays</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased">
+<body>
+  <div class="container">
+    <header>
+      <h1>WrdtPlays</h1>
+      <p class="tagline">Temani harimu dengan mini-game</p>
+    </header>
 
-    <main class="container mx-auto py-16 px-6 md:px-10">
-        <!-- Card Aplikasi Dirilis -->
-        <section class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl shadow-xl p-8 md:p-16 text-center mb-16 border border-indigo-100">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-800 mb-4 leading-tight tracking-tight">
-                WrdtPlays
-            </h1>
-            <p class="text-gray-700 text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-                Platform hiburan interaktif dengan mini-game seru untuk mengisi waktu luang Anda.
-            </p>
-            <a href="WrdtPlays.apk" download class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75">
-                Unduh WrdtPlays.apk
-            </a>
-        </section>
+    <section class="preview">
+      <img src="https://placehold.co/500x800/e0e7ff/3730a3?text=WrdtPlays+UI" alt="Preview WrdtPlays" class="screenshot">
+    </section>
 
-        <!-- Tentang WrdtPlays -->
-        <section class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-16 border border-gray-100">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Tentang WrdtPlays</h2>
-            <p class="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto text-center">
-                WrdtPlays dirancang untuk memberikan pengalaman bermain game yang ringan namun sangat menghibur. 
-                Dengan koleksi mini-game yang terus diperbarui, Anda tidak akan pernah bosan. 
-                Cocok untuk mengisi waktu istirahat atau bersantai setelah hari panjang.
-            </p>
-        </section>
-    </main>
+    <section class="features">
+      <h2>✨ Fitur Unggulan</h2>
+      <ul>
+        <li>🎮 Koleksi mini-game beragam dan seru</li>
+        <li>🏆 Tantangan harian & mingguan</li>
+        <li>🌍 Papan peringkat global</li>
+        <li>📴 Mode offline kapan saja</li>
+      </ul>
+    </section>
 
-    <!-- Footer dengan Contact Me -->
-    <footer class="bg-white py-10 px-6 md:px-10 text-center text-gray-600 rounded-t-lg shadow-inner">
-        <p class="mb-4 font-semibold text-lg">Hubungi</p>
-        <div class="flex justify-center gap-6 mb-6">
-            <a href="mailto:rangga@example.com" class="text-indigo-600 hover:text-indigo-800 transition">
-                📧 Email
-            </a>
-            <a href="https://instagram.com/rangga" class="text-pink-500 hover:text-pink-700 transition">
-                📷 Instagram
-            </a>
-        </div>
-        <p class="text-sm">&copy; <span id="current-year-detail"></span> Rangga Waridat. Semua hak dilindungi.</p>
+    <section class="download">
+      <a href="WrdtPlays.apk" class="button" download>Download APK</a>
+    </section>
+    
+    <br><br>
+
+    <footer>
+      <p>© 2025 Rangga Waridat</p>
     </footer>
-
-    <script>
-        document.getElementById('current-year-detail').textContent = new Date().getFullYear();
-    </script>
+  </div>
 </body>
 </html>
